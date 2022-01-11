@@ -209,21 +209,24 @@ main {
 .color-wrap {
   display: flex;
   align-items: center;
-  transform: translateZ(40px);
-  transform-style: preserve-3d;
 }
 
-.color-wrap > span {
+.color-wrap span {
   font-weight: 600;
   font-size: 1.2rem;
   margin-right: 1.3rem;
+}
+
+.color-wrap .colors {
   transform: translateZ(40px);
   transform-style: preserve-3d;
+  transition: 0.3s;
 }
 
 .colors {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .color {
@@ -232,8 +235,6 @@ main {
   height: 27px;
   border-radius: 50%;
   margin-right: 0.6rem;
-  cursor: pointer;
-  transition: 0.3s;
 }
 
 .color.blue {
@@ -246,7 +247,7 @@ main {
   border: 4.5px solid #333;
 }
 
-.color.white {
+.color.gray {
   background-color: #ccc;
   border: 4.5px solid #ccc;
 }
